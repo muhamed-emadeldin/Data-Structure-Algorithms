@@ -1,0 +1,44 @@
+"""
+TASK 0:
+Time complexity O(1).
+Print the first row of texts.csv. O(1)
+Print the last row of calls.csv. O(1)
+Combining all the above results in O(1 + 1) = O(2).
+"""
+
+"""
+TASK 1:
+Time complexity O(2n).
+We have 2 different for loops but they all iterate from 1 to n in a liner manner O(2n)
+return with result string.O(1)
+Combining all the above results in O(2n + 2n + 1) = O(4n + 1).
+"""
+
+"""
+TASK 2:
+Time complexity O(2*len(n)*k).
+We have one loop but this is iterate from 1 to n in a liner manner O(n)
+We have 2 different for max loops.O(2*len(n)*k)
+return with result string.O(1)
+Combining all the above results in O(n + 2*len(n)*k + 1) = O(n + 2*len(n)*k + 1).
+"""
+
+"""
+TASK 3:
+Time complexity O(3n).
+We have list. O(1)
+We have 2 different for loops but they all iterate from 1 to n in a liner manner O(2n)
+We have Sorted(Set(list)) which linearly changes the data structure first to a set, then linearly changes data structure back to list. O(3n) 
+return with result string.O(1)
+Combining all the above results in O(1 + 2n + 3n + 1 + 1) = O(5n + 3).
+"""
+
+"""
+TASK 4:
+Time complexity O(n^2).
+We have 3 lists. O(3)
+We have 2 different for loops but they all iterate from 1 to n in a liner manner O(2n)
+we have to do 2 full looping iterations O(n^2)
+return with result string.O(1)
+Combining all the above results in O(3 + 2n + n^2 + 1) = O(2n + n^2 + 3).
+"""
