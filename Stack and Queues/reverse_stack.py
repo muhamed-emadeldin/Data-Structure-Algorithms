@@ -57,19 +57,16 @@ def reverse_stack(stack):
     # TODO: Write the reverse stack function
       
     #basic variables
-    new_list = []
+    new_stack= Stack()
 
     #defense function
     if stack.size() <= 1:
       return stack
 
     while stack.head is not None:
-      new_list.append(stack.pop())
+      new_stack.push(stack.pop())
 
-    for _ in new_list:
-      stack.push(_)
-
-    return stack
+    return new_stack
 
 
 def test_function(test_case):
